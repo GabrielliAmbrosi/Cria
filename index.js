@@ -42,7 +42,7 @@ app.post('/prod/insertprod', (req, res) => {
 })
 
 app.get('/prod', (req, res) => {
-    const sql = 'SELECT * FROM cria-livros' 
+    const sql = 'SELECT * FROM livro' 
 
     conn.query(sql, function(err, data){
         if (err){
